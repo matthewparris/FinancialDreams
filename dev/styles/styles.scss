@@ -1,134 +1,440 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+body{
+  font-family: 'Raleway', sans-serif;
 }
 
-header {
-  color: #fff;
-  background-color: #103D5D;
-  padding: 33px 0 25px 15px;
-}
-
-header h1 {
-  font-size: 25px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  display: inline-block;
-  margin: 0;
-  vertical-align: middle;
-  
-}
-
-.fa {
-  font-size: 22px;
-  transform: translateY(50deg);  
-}
-
-header i {
-  vertical-align: middle;
-  margin-left: 12px;
-}
-
-.container {
-  display: flex;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-top: 30px;
-}
 
 .wrapper {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.add-item {
-  border-radius: 2px;
-  border-top: 3px solid #103D5D;
-  margin-right: 50px;
-  background-color: rgb(237, 237, 237);
-  padding: 60px 18px;
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
-  margin-bottom: 34px;  
-  width: 25%;
-  margin-right: auto;
+header{
+  // Photo by rawpixel.com on Unsplash
+  background-image: Linear-gradient(rgba(0,0,0, 0.20), rgba(0,0,0,0.40)),url('/dev/images/rawpixel-com-252130.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.display-item {
-  width: 65%;
-  margin-left: 50px;
-}
-
-.display-item button {
-  margin-top: 20px;
-  margin-left: auto;
-  display: block;
-}
-
-.add-item form {
+.dreamsBegin{
   width: 100%;
-  overflow: hidden;
+  text-align: center;
+  h1{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding-top: 60px;
+    margin-bottom: 100px;
+  }
+  button{ 
+    margin-right: 0;
+    color: white;
+    font-size: 30px;
+    background-color: #fd8a10;
+    padding: 15px 30px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+  }
 }
 
-input {
-  font-size: 22px;
-  color: #000;
-  padding: 18px 22px;
-  font-size: 16px;
-  margin-bottom: 17px;
-  border: 0;
-  display: block;
-  width: 100%;  
+section{
+  background:#f5f5f5;
 }
 
-ul {
+.letTheDreamsBegin{
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
-li {
-  width: calc(50% - 50px);
-  list-style-type: none;
-  margin-right: 50px;
-  background-color: rgb(237, 237, 237);
-  color: #000;
+.ifYouBelieve{
+  width: 40%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.savingDream{
+  width: 60%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    color: white;
+    font-size: 20px;
+    background-color: #fd8a10;
+    padding: 10px 20px;
+  }
+}
+.savingFor{
+  margin-bottom: 20px;
+  padding: 15px 80px;
+  font-size: 13px;
+}
+
+.howMuch{
   margin-bottom: 30px;
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12), 0 1px 8px 0 rgba(0,0,0,.2);
+  padding: 15px 80px;
+  font-size: 13px;
 }
 
-h2 {
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
+main{
+  background:#f5f5f5;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-li h3 {
-  background-color: #103D5D;
-  margin: 0;
-  color: #fff;
-  font-weight: 300;
-  padding: 15px;
-}
-
-li p {
-  padding: 15px;
-}
-
-form button {
+.IncomeAndExpenses{
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  margin-top: 10px;
+  h3{
+    text-align: center;
+  }
 }
 
-button {
-  border-radius: 2px;
-  min-width: 88px;
-  background-color: #FA6900;
-  cursor: pointer;
-  border: 0;
-  min-width: 120px;
-  color: #fff;
-  font-size: 14px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-  padding: 10px 6px;
+.annual{
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  form{
+    display: flex;
+  }
 }
+
+.expenses{
+  width: 45%;
+  display: flex;
+
+  form{
+    display: flex;
+  }
+}
+
+.Amount h3{
+  text-align: center;
+}
+
+.expAmount h3{
+  text-align: center;
+}
+
+.expAmount button, .Amount button{
+  text-transform: uppercase;
+  padding: 10px 10px;
+  background-color: #fd8a10;
+}
+
+.yearlyMonthlyTotal{
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin: 100px 0 20px 0;
+height: 90px;
+  span{
+    color: red;
+  }
+}
+
+.annualTotal{
+  text-align: center;
+  width: 45%;
+  border: 1px solid #b1b1b1;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+}
+
+.annualContent{
+  display: flex;
+}
+
+.monthlyTotal{
+  text-align: center;
+  width: 45%;
+  border: 1px solid #b1b1b1;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+
+}
+
+.monthlyContent{
+  display: flex;
+}
+
+.calc{
+  display: flex;
+  align-items: center;
+}
+
+.monthDetails{
+  border: 1px solid #fff;
+  background: white;
+  padding: 10px 20px;
+  width: calc((100% / 3) - 40px);
+  margin: 20px;
+  height: 30px;
+  p{
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+
+.annualDetails{
+  border: 1px solid #fff;
+  background: white;
+  padding: 10px 20px;
+  width: calc((100% / 3) - 40px);
+  margin: 20px;
+  height: 30px;
+  p{
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+
+.comment{
+  background: #ffffff;
+  text-align: center;
+  h4{
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-top: 10px;
+    text-align: right;
+    font-size: 50px;
+  }
+}
+
+.expenseDescription[placeholder]{
+  width: 100%;
+}
+.annualOptions{
+  min-width: 150px;
+  padding: 10px 0;
+}
+
+.annualDescription{
+  min-width: 200px;
+  padding: 10px 0;
+}
+
+.annualValue{
+  width: 80px;
+  padding: 10px 0;
+}
+
+.expenseOption{
+  min-width: 150px;
+}
+
+.expenseDescription{
+  min-width: 200px;
+  padding: 10px 0;
+}
+
+.expenseValue{
+  width: 80px;
+  padding: 10px 0;
+}
+
+select{
+  height: 38px;
+}
+
+
+
+.budgetResults{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+    background: #ffffff;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    h3{
+      width: 40%;
+      font-size: 50px;
+    }
+    p{
+      font-size: 30px;
+    }
+}
+
+.finalCalc{
+  width: 45%;
+}
+
+
+.signUp{
+  background: #64888a;
+}
+
+.letsDoThis{
+  text-align: center;
+  color: white;
+  h3{
+    font-size: 50px;
+    padding-top: 60px;
+  
+  }
+  p{
+    margin-top: 10px;
+    padding-bottom: 30px;
+    font-size: 30px;
+
+  }
+  button{
+    margin-bottom: 70px;
+    font-size: 20px;
+    background: none;
+    border: 2px dotted #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+footer{
+ width: 100%;
+  margin-top: 20px;
+  h4{
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+}
+
+
+.fa{
+  font-size: 20px;
+}
+
+.Info{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact{
+  text-align: center;
+  text-transform: uppercase;
+
+  justify-content: space-around;
+}
+
+.social{
+  padding-top: 45px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.fa-facebook{
+  margin-left: 20px;
+}
+
+.fa-linkedin{
+  margin-left: 20px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1140px) {
+  .ifYouBelieve{
+  width: 50%;
+  }
+
+  .IncomeAndExpenses{
+    flex-direction: column;
+  }
+  .annual{
+    width: 100%;
+    justify-content: center;
+
+  }
+  .expenses{
+    margin-top: 80px;
+    width: 100%;
+    justify-content: center;
+  }
+  .yearlyMonthlyTotal{
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .monthlyTotal{
+    width: 70%;
+  }
+  .annualTotal{
+    width: 70%;
+  }
+}
+
+@media (max-width: 940px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .monthlyTotal{
+    width: 100%;
+  }
+  .annualTotal{
+    width: 100%;
+  }
+  .letTheDreamsBegin{
+    flex-direction: column;
+  }
+  .ifYouBelieve{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    li{
+      list-style: none;
+    }
+  }
+  .savingDream{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .budgetResults{
+    flex-direction: column;
+    h3{
+      width: 100%;
+      font-size: 40px;
+    }
+  }
+  .finalCalc{
+    width: 100%;
+    p{
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  .Testimonial{
+    h4{
+      font-size: 50px;
+    }
+    p{
+      font-size: 25px;
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+
+
+
+
+
